@@ -414,7 +414,7 @@ ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
   }
   .amarillo
   {
-    margin-top: 10%;
+    margin-top: 10px;
     color: #000000;
     background-color: #edff11;
     border-color: #edff11;
@@ -440,6 +440,7 @@ ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
   .TamImg
   {
     float: right;
+    margin-top: 10px;
     margin-right: 10%;
     width: 20px;
     height: 20px;
@@ -448,19 +449,19 @@ ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
   {
     float: right;
     margin-right: 10%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
   .TamImg3
   {
     float: right;
-    margin-right: 10%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
   .TamImg4
   {
     float: right;
+    margin-top: 3px;
     margin-right: 10%;
     width: 20px;
     height: 20px;
@@ -468,6 +469,7 @@ ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
   .TamImg5
   {
     float: right;
+    margin-top: 3px;
     margin-right: 10%;
     width: 20px;
     height: 20px;
@@ -479,7 +481,7 @@ ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
   input[type="search"]{
   width: 150px; /*ancho por defecto*/
   background: #505050 url('search-icon.png') no-repeat 9px center; /*icono lupa*/
-  padding: 2px 10px 2px 32px;
+  padding: 2px 10px 2px 15px;
   border-radius: 7em;
   -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
   -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
@@ -489,7 +491,7 @@ ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
 }
 input[type="search"]:focus{
   width: 200px; /*tamaño del boton buscar al hacer click*/
-  padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+  padding-left: 20px; /*espacio entre el icono lupa y el placeholder*/
   color: #3c3c3c;
   background-color: #505050;
 }
