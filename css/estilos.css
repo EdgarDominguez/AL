@@ -3,7 +3,7 @@ body
   background: #000000;
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family:'Roboto';
   src: url('roboto.eot'); /* IE9 Compat Modes */
   src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('roboto.woff') format('woff'), /* Modern Browsers */
@@ -14,12 +14,16 @@ body
 {
 	display: none;
 }
-#logo
-{
-  height: 100%;
-  margin: 10px 0px 10px 0px;
-  text-align: center;
-}
+#btncontinuarFace,#registro
+  {
+    display: none;
+  }
+
+  #logo
+  {
+    margin: 5% 0% 5% 0%;
+    text-align: center;
+  }
 #logo img{
     max-width: 100%;
 }
@@ -96,7 +100,170 @@ body
 }
 
 
+#logocargando
+  {
+    height: 100%;
+    width: 100%;
+    margin-top: 48%;
+    text-align: center;
+  }
+  .cargando
+  {
+  margin-top: 55%;
+  }
+/*   codigo tabs  */
+#registro
+{
+  height: 100%;
+    margin: 5% 5% 5% 5%;
+    text-align: center;
+  
+}
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
 
+/* Float the list items side by side */
+ul.tab li 
+{
+
+  float: left;
+   width: 49.9%;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+  width:100%;
+    display: inline-block;
+    color: #c8c8c8;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
+
+/* Style the tab content */
+.alcontent {
+    background-color: #3c3c3c;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+
+}
+#divlogin ,#divliga
+{
+   height: 330px;
+}
+#divliga
+{
+  color: #c8c8c8;
+  font-size: 16px;
+}
+.btncuadrado
+{
+  width: 100%;
+  height: 15%;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border: 0px solid #000000;
+}
+.cuadrado
+{
+  width: 60%;
+  color: #646464;
+  background: #505050;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border: 0px solid #000000;
+}
+.azul
+  { 
+    margin-top: 10%;
+    color: #ffffff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+    display: inline-block;
+  }
+  .rojo
+  {
+    margin-top: 8%;
+    color: #ffffff;
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    display: inline-block;
+  }
+  .gris
+  {
+    margin-top: 45%;
+    color: #ffffff;
+    background-color: #505050;
+    border-color: #505050;
+    display: inline-block;
+  }
+  .amarillo
+  {
+    margin-top: 10%;
+    color: #000000;
+    background-color: #edff11;
+    border-color: #edff11;
+    display: inline-block;
+  }
+  .btngris
+  { 
+    vertical-align: top;
+    margin: 10px 0px 0px 0px;
+    background-color: #505050;
+    border-color: #505050;
+  }
+  .derecha
+  {
+    text-align: right;
+     float: right;
+  }
+  .izquierda
+  {
+
+    text-align: left;
+  }
+  .TamImg
+  {
+    float: right;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+  /* Create buscar*/
+  input[type="search"]{
+  width: 150px; /*ancho por defecto*/
+  background: #505050 url('search-icon.png') no-repeat 9px center; /*icono lupa*/
+  padding: 2px 10px 2px 32px;
+  border-radius: 7em;
+  -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+  -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+  -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+  transition: all .5s; /* transición de .5seg a todos los elementos*/
+  outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+  width: 200px; /*tamaño del boton buscar al hacer click*/
+  padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+  color: #3c3c3c;
+  background-color: #505050;
+}
 
 
 
@@ -117,10 +284,14 @@ body
 	  background: #000000;
 	}
 
+  #btncontinuarFace,#registro
+  {
+    display: none;
+  }
+
 	#logo
 	{
-	  height: 100%;
-	  margin: 10px 0px 10px 0px;
+	  margin: 5% 0% 5% 0%;
 	  text-align: center;
 	}
 	#logo img
@@ -141,23 +312,189 @@ body
 	{
 	margin-top: 55%;
 	}
+/*   codigo tabs  */
+#registro
+{
+  height: 100%;
+    margin: 5% 5% 5% 5%;
+    text-align: center;
+  
+}
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
 
-	#tabaccion
-	{
-		padding:0.01em 16px;
-	}
-	.al-navbar
-	{
-		list-style-type:none;
-		margin:0;
-		padding:0;
-		overflow:hidden
-	}
+/* Float the list items side by side */
+ul.tab li 
+{
 
-	.city 
-	{
-		display:none;
-	}
+  float: left;
+   width: 49.9%;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+  width:100%;
+    display: inline-block;
+    color: #c8c8c8;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #3c3c3c; color: #505050;}
+
+/* Style the tab content */
+.alcontent {
+    background-color: #3c3c3c;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+
+}
+#divlogin ,#divliga
+{
+   height: 330px;
+}
+#divliga
+{
+  color: #c8c8c8;
+  font-size: 16px;
+}
+.btncuadrado
+{
+  width: 100%;
+  height: 15%;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border: 0px solid #000000;
+}
+.cuadrado
+{
+  width: 60%;
+  color: #646464;
+  background: #505050;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border: 0px solid #000000;
+}
+.azul
+  { 
+    margin-top: 10%;
+    color: #ffffff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+    display: inline-block;
+  }
+  .rojo
+  {
+    margin-top: 8%;
+    color: #ffffff;
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    display: inline-block;
+  }
+  .gris
+  {
+    margin-top: 45%;
+    color: #ffffff;
+    background-color: #505050;
+    border-color: #505050;
+    display: inline-block;
+  }
+  .amarillo
+  {
+    margin-top: 10%;
+    color: #000000;
+    background-color: #edff11;
+    border-color: #edff11;
+    display: inline-block;
+  }
+  .btngris
+  { 
+    vertical-align: top;
+    margin: 10px 0px 0px 0px;
+    background-color: #505050;
+    border-color: #505050;
+  }
+  .derecha
+  {
+    text-align: right;
+     float: right;
+  }
+  .izquierda
+  {
+
+    text-align: left;
+  }
+  .TamImg
+  {
+    float: right;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+  .TamImg2
+  {
+    float: right;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+  .TamImg3
+  {
+    float: right;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+  .TamImg4
+  {
+    float: right;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+  .TamImg5
+  {
+    float: right;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+  /* Create buscar*/
+  input[type="search"]{
+  width: 150px; /*ancho por defecto*/
+  background: #505050 url('search-icon.png') no-repeat 9px center; /*icono lupa*/
+  padding: 2px 10px 2px 32px;
+  border-radius: 7em;
+  -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+  -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+  -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+  transition: all .5s; /* transición de .5seg a todos los elementos*/
+  outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+  width: 200px; /*tamaño del boton buscar al hacer click*/
+  padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+  color: #3c3c3c;
+  background-color: #505050;
+}
+
+
 
 
 

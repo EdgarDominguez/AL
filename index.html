@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- hace el adaptable a la pantalla la aplicacion web-->
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/w3.css">
 	<script src="js/jquery/jquery.min.js"></script>
@@ -13,7 +15,7 @@
 	<header>
 		<main>
 			<div id="logo">
-				<img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal">
+				<img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal" height="50">
 			</div>
 		</main>
 	</header>
@@ -25,7 +27,102 @@
 			</div>
 		</div>
 	</section>
+	<section>
+	<div id="registro">
+		<ul class="tab">
+		  <li><a id="login" class="tablinks"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+		  <li><a id="liga" class="tablinks"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></li>
+		</ul>
 
+		<div id="divlogin" class="alcontent">
+		  <button type="button" href="#" id="login" class="btn btn-default azul btncuadrado" align="center"><i class="fa fa-facebook" aria-hidden="true"></i>	Iniciar sesion con Facebook</button>
+		  <button type="button" id="gSignIn" class="btn btn-default rojo btncuadrado" align="center"><i class="fa fa-google-plus" aria-hidden="true"></i>	Iniciar sesion con Google</button>
+		  <button type="button" class="btn btn-default gris btncuadrado" align="center" id="btnNoLogin">CONTINUAR SIN IDENTIFICAR
+			<span class="glyphicon glyphicon-menu-right"></span></button>
+			<button type="button" class="btn btn-default gris btncuadrado" align="center" id="btncontinuarFace">CONTINUAR 
+			<span class="glyphicon glyphicon-menu-right"></span></button>
+		</div>
+
+		<div id="divliga" class="alcontent">
+		  <table id="tablaLiga">
+		  		<tr>
+					<td>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form action="">
+							<input type="search" name="nombre" placeholder="Busca tu liga">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda">
+						<label class="control-label">Estado:</label>
+				
+						    <select class="cuadrado derecha" id="selectEstado">
+								<option>Seleccionar</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td  class="izquierda">
+						<label class="control-label">Ciudad:</label>
+						    <select class="cuadrado derecha" id="selectCuidad">
+								<option>Seleccionar</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda">
+						<label class="control-label">Deporte:</label>
+					
+						<img src="img/Beisinactivo.png" class="TamImg"/>
+						<img src="img/Softbolinactivo.png" class="TamImg2"/>
+						<img src="img/Futbolinactivo.png" class="TamImg3"/>
+					</td>
+				</tr>
+				<tr>
+					<td  class="izquierda">
+						<label class="control-label">Rama:</label>
+					
+						<img src="img/Femeninoinactivo.png" class="TamImg4"/>
+						<img src="img/Masculinoinactivo.png" class="TamImg5"/>
+					</td>
+				</tr>
+				<tr>
+					<td  class="izquierda">
+						<label class="control-label">Categoria:</label>
+				
+						    <select class="cuadrado derecha" id="selectCategoria">
+						    	<option>Seleccionar</option>	
+					    </span>	
+					</td>
+				</tr>
+				<tr>
+					<td  class="izquierda">
+						<label class="control-label">Liga:</label>
+						    <select class="cuadrado derecha" id="selectLiga">
+						    	<option>Seleccionar</option>						    
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="button" class="cuadrado btn btn-default amarillo" align="center" id="btnEnviar">Entrar
+						<span class="glyphicon glyphicon glyphicon-ok"></span></button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</section>
 
 </body>
 </html>
