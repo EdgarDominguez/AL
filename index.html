@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/map-marker.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- hace el adaptable a la pantalla la aplicacion web-->
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
@@ -45,6 +46,7 @@
 
 		<div id="divliga" class="alcontent">
 		  <table id="tablaLiga">
+		  		<tr>
 					<td>
 						<form action="">
 							<input type="search" name="nombre" placeholder="Busca tu liga">
@@ -56,7 +58,7 @@
 						<br>
 					</td>
 				</tr>
-								<tr>
+				<tr>
 					<td class="izquierda">
 						<label class="control-label">Deporte:</label>
 						<img src="img/Futbolinactivo.png" class="TamImg3"/>
@@ -122,20 +124,23 @@
 	<div class="contedor2">
 		<nav>				
 			<div class="AL">
-				<li><span class="glyphicon glyphicon-menu-left" onclick="history.go(-1);"></span></li>
+				<li><span class="glyphicon glyphicon-menu-left"></span></li>
 				<li><div class="avatar" style="background-image: url(img/imagen3.gif)"></div></li>
 				<li><div id="nombreliga">Colhuancan</div></li>
 			</div>
 			<div class="AR">
 				<li><img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal" height="25"></li>
-				<li><span class="glyphicon glyphicon-option-vertical"></span></li>
+				<li id="Despliega"><span class="glyphicon glyphicon-option-vertical"></span></li>
 			</div>				
 		</nav>
 	</div>
+	<div id="divDespliega">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
 </section>
-<section>
+<section id="y">
 	<div class="menu">
-		<nav class="nav3">
+		<nav class="nav3 tab">
 				<!--		
 			<li class="cuarto">
 				<div>
@@ -164,27 +169,27 @@
 
 		-->
 
-			<li class="cuarto">
+			<li class="cuarto" >
 				<div>
-				<span class="glyphicon glyphicon-home iconoshome"></span><br>
+				<a id="Home" class="tablinks"><span class="glyphicon glyphicon-home iconoshome"></span></a><br>
 				<small>Inicio</small>
 				</div>
 			</li>
 			<li class="cuarto">
 				<div>
-				<span class="glyphicon glyphicon-ok iconoshome"></span><br>
+				<a id="Resultados" class="tablinks"><span class="glyphicon glyphicon-ok iconoshome"></span></a><br>
 				<small>Resultados</small>
 				</div>
 			</li>
 			<li class="cuarto">
 				<div>
-				<span class="glyphicon glyphicon-calendar iconoshome"></span><br>
+				<a id="Calendario" class="tablinks"><span class="glyphicon glyphicon-calendar iconoshome"></span></a><br>
 				<small>Calendario</small>
 				</div>
 			</li>
 			<li>
 				<div>
-				<span class="glyphicon glyphicon-stats iconoshome"></span><br>
+				<a id="Estadisticas" class="tablinks"><span class="glyphicon glyphicon-stats iconoshome"></span></a><br>
 				<small>Estadisticas</small>
 				</div>
 			</li>
@@ -198,60 +203,662 @@
 		</nav>
 	</div>
 </section>
-<section>
-	<div class="comentarios">
-		<div class="comentario">
-			<table id="tblcom">
-				<tr>
-					<td  VALIGN=TOP>
-						<br>
-						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40" style="margin: 0px 6px 0px 4px;">
-					</td>
-					<td>
-						<em>Font Awesome</em>
-						<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
-						<br>
-						<small>
-							You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
-							You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
-						</small>
-						<br>
-						<img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal" height="58">
-						<br>
-						<small>
-							3 horas
-						</small>
-					</td>
-				</tr>
-			</table>	
+<section id="z">
+	<div id="divHome" class="alcontentmenu">
+		<div class="comentarios">
+			<div class="comentario">
+				<table id="tblcom">
+					<tr>
+						<td  VALIGN=TOP>
+							<br>
+							<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40" style="margin: 0px 6px 0px 4px;">
+						</td>
+						<td>
+							<em>Font Awesome</em>
+							<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+							<br>
+							<small>
+								You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
+								You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
+							</small>
+							<br>
+							<img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal" height="58">
+							<br>
+							<small>
+								3 horas
+							</small>
+						</td>
+					</tr>
+				</table>	
+			</div>
+			<div class="comentario">
+				<table id="tblcom">
+					<tr>
+						<td  VALIGN=TOP>
+							<br>
+							<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40" style="margin: 0px 6px 0px 4px;">
+						</td>
+						<td>
+							<em>Font Awesome</em>
+							<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+							<br>
+							<small>
+								You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
+								You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
+							</small>
+							<br>
+							<img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal" height="58">
+							<br>
+							<small>
+								3 horas
+							</small>
+						</td>
+					</tr>
+				</table>	
+			</div>
 		</div>
-		<div class="comentario">
-			<table id="tblcom">
-				<tr>
-					<td  VALIGN=TOP>
-						<br>
-						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40" style="margin: 0px 6px 0px 4px;">
-					</td>
-					<td>
-						<em>Font Awesome</em>
-						<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
-						<br>
-						<small>
-							You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
-							You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons?
-						</small>
-						<br>
-						<img src="img/logo.png" alt="Logo accionlocal" title="Logo del accionlocal" height="58">
-						<br>
-						<small>
-							3 horas
-						</small>
-					</td>
-				</tr>
-			</table>	
+		<br>
+	</div>
+	<div id="divResultados" class="alcontentmenu">
+		<ul class="tab3">
+		</ul>
+		<div id="ResultadosTab" class="alcontent">
+			<div id="muestraResultados" class="estiloRESULTADOS">
+				<em style="float: left;">Jornada #</em>
+				<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+				<br>
+				<div class="divtercio">
+					<table>
+						<tr>
+							<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						</tr>
+						<tr>
+							<em>Equipo 1</em>
+						</tr>
+					</table>
+				</div>
+				<div class="divtercio vs">
+				    <em> </em>
+					<em>VS</em>
+					<em> </em>
+				</div>
+				<div class="divtercio">
+					<table>
+						<tr>
+							<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						</tr>
+						<tr>
+							<em>Equipo 2</em>
+						</tr>
+					</table>
+				</div>
+				<br>
+				<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+			</div>
+			<div id="muestraResultados" class="estiloRESULTADOS">
+				<em style="float: left;">Jornada #</em>
+				<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+				<br>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 1</em>
+				</div>
+				<div class="divtercio vs">
+				    <em> </em>
+					<em>VS</em>
+					<em> </em>
+				</div>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 2</em>
+				</div>
+				<br>
+				<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+			</div>
+			<div id="muestraResultados" class="estiloRESULTADOS">
+				<em style="float: left;">Jornada #</em>
+				<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+				<br>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 1</em>
+				</div>
+				<div class="divtercio vs">
+				    <em> </em>
+					<em>VS</em>
+					<em> </em>
+				</div>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 2</em>
+				</div>
+				<br>
+				<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+			</div>
+			<div id="muestraResultados" class="estiloRESULTADOS">
+				<em style="float: left;">Jornada #</em>
+				<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+				<br>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 1</em>
+				</div>
+				<div class="divtercio vs">
+				    <em> </em>
+					<em>VS</em>
+					<em> </em>
+				</div>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 2</em>
+				</div>
+				<br>
+				<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+			</div>
+			<div id="muestraResultados" class="estiloRESULTADOS">
+				<em style="float: left;">Jornada #</em>
+				<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+				<br>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 1</em>
+				</div>
+				<div class="divtercio vs">
+				    <em> </em>
+					<em>VS</em>
+					<em> </em>
+				</div>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 2</em>
+				</div>
+				<br>
+				<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+			</div>
+			<div id="muestraResultados" class="estiloRESULTADOS">
+				<em style="float: left;">Jornada #</em>
+				<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+				<br>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 1</em>
+				</div>
+				<div class="divtercio vs">
+				    <em> </em>
+					<em>VS</em>
+					<em> </em>
+				</div>
+				<div class="divtercio">
+					<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+					<em>Equipo 2</em>
+				</div>
+				<br>
+				<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+			</div>
 		</div>
 	</div>
-	<br>
+	<div id="divCalendario" class="alcontentmenu">
+		<div id="CalendarioTab">
+			<ul class="tab3">
+				<li><a id="FECHA" class="tablinks">FECHA</li>
+				<li><a id="EQUIPO" class="tablinks">EQUIPO</a></li>
+			</ul>
+			<div id="divFECHA" class="alcontent">
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<br>
+						<br>
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<br>
+						<br>
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraFECHA" class="estiloFECHA">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+			</div>
+			<div id="divEQUIPO" class="alcontent">
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+				<div id="muestraEQUIPO" class="estiloEQUIPO">
+					<em style="float: left;">Jornada #</em>
+					<span class="glyphicon glyphicon-share-alt" style="float: right;"></span>
+					<br>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 1</em>
+					</div>
+					<div class="divtercio vs">
+					    <em> </em>
+						<em>VS</em>
+						<em> </em>
+					</div>
+					<div class="divtercio">
+						<img src="img/images5.jpg" alt="Logo accionlocal" title="Logo del accionlocal" height="40" width="40">
+						<em>Equipo 2</em>
+					</div>
+					<br>
+					<span class="glyphicon glyphicon-calendar" style="float: left;">Fecha</span>
+					<span class="glyphicon glyphicon-map-marker">Lugar</span>
+					<span class="glyphicon glyphicon-dashboard" style="float: right;">Hora</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="divEstadisticas" class="alcontentmenu">
+		<div id="EstadisticasTab">
+			<ul class="tab2">
+				<li><a id="GENERAL" class="tablinks tabestadisticas">GENER</span></li>
+				<li><a id="BATEO" class="tablinks tabestadisticas">BATEO</a></li>
+				<li><a id="PICHEO" class="tablinks tabestadisticas">PICHEO</span></li>
+			</ul>
+
+			<div id="divBATEO" class="alcontent">
+				<table id="tablaBATEO">
+					<tr>
+						<td>
+							<em></em>
+						</td>
+						<td>
+							<em>Equipo</em>
+						</td>
+						<td>
+							<em>Nombre</em>
+						</td>
+						<td>
+							<em>E#</em>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							Equipo
+						</td>
+						<td>
+							Nombre del jugador
+						</td>
+						<td>
+							20
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="divPICHEO" class="alcontent">
+				<table id="tablaPICHEO">
+					<tr>
+						<td>
+							<em></em>
+						</td>
+						<td>
+							<em>Equipo</em>
+						</td>
+						<td>
+							<em>Nombre</em>
+						</td>
+						<td>
+							<em>E#</em>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							Equipo
+						</td>
+						<td>
+							Nombre del jugador
+						</td>
+						<td>
+							20
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="divGENERAL" class="alcontent">
+				<table id="tablaGENERAL">
+					<tr>
+						<td>
+							<em></em>
+						</td>
+						<td>
+							<em>Equipo</em>
+						</td>
+						<td>
+							<em>Nombre</em>
+						</td>
+						<td>
+							<em>E#</em>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							Equipo
+						</td>
+						<td>
+							Nombre del jugador
+						</td>
+						<td>
+							20
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<div id="divPICHEO" class="alcontent">
+				<table id="tablaPICHEO">
+					
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	
 </section>
 
 
